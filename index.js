@@ -1,12 +1,12 @@
-var person = [
+const person = [
     {
         name: 'Bob',
         age: 32,
-        gender: 'male'
+        gender: 'male',
     },
     {
         name: 'Mike',
         age: 26,
-        gender: 'male'
-    }
+        gender: 'male',
+    },
 ];
