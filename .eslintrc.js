@@ -1,7 +1,23 @@
 module.exports = {
-    env: {
-        browser: true, // document や console にエラーが出ないようにする
-        es6: true, // es6から使える let や const にエラーがでないようにする
+    "env": {
+        "browser": true,
+        "es6": true
     },
-    extends: ['eslint:recommended', 'plugin:prettier/recommended'], // ESLintの推奨設定をベースにする
+    "extends": "plugin:react/recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    }
 };
